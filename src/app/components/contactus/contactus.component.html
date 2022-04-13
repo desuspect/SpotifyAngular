@@ -1,0 +1,17 @@
+<div> {{error}}</div>
+<form>
+    <div class="container">
+      <label ><b>Name</b></label>
+      <input [(ngModel)] ="userContactUsData.name" name ="email" required>
+    <br>
+    <label ><b>email</b></label>
+    <input [(ngModel)] ="userContactUsData.email" name ="email" required>
+    <br>
+    <label ><b>Message</b></label>
+    <textarea [(ngModel)] ="userContactUsData.textArea" name ="email" required>
+        <textarea name="" id="" cols="30" rows="10" [(ngModel)] ="userLoginData.textarea"  ></textarea>
+    <br>
+  
+      <button (click)="contactUsUser()" type="button">Submit</button>
+    </div>
+  </form>

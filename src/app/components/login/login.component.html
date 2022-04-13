@@ -1,0 +1,12 @@
+<div> {{error}}</div>
+<form>
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input [(ngModel)] ="userLoginData.email" name ="email" required>
+    <br>
+      <label for="psw"><b>Password</b></label>
+      <input  [(ngModel)] ="userLoginData.password" type="password" name="password" required>
+      <br>
+      <button (click)="loginUser()" type="button">Login</button>
+    </div>
+  </form>
