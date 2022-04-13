@@ -12,7 +12,7 @@ import { LoginComponent } from './components/login/login.component';
 import { GuardAuthService } from './guard-auth.service';
 
 const routes: Routes = [
-  {path: '', component: NewReleasesComponent , canActivate: [GuardAuthService]},
+  {path: '', component: LoginComponent},
   {path: 'newReleases', component: NewReleasesComponent, canActivate: [GuardAuthService]},
   {path: 'about', component: AboutComponent, canActivate: [GuardAuthService]},
   {path: 'album/:id', component: AlbumComponent, canActivate: [GuardAuthService]},
