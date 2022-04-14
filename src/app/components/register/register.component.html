@@ -15,11 +15,11 @@
                 <input [(ngModel)] ="registerUser.password2" matInput type="password" placeholder="Password" name="password2" required>
             </mat-form-field>
             <br />
-            <button  (click)="onSubmit()" mat-raised-button color="primary" type="submit"  *ngIf="!success;">
+            <button  (click)="onSubmit()" mat-raised-button color="primary" type="submit"   *ngIf="!success && !loading;">
                 <mat-icon>account_box</mat-icon>
                 <span>&nbsp;&nbsp;&nbsp;Register</span>
             </button>
-              <button  (click)="onSubmit()" mat-raised-button color="primary" type="submit" disabled *ngIf="success;">
+              <button  (click)="onSubmit()" mat-raised-button color="primary" type="submit" disabled *ngIf="success || loading;">
                 <mat-icon>account_box</mat-icon>
                 <span>&nbsp;&nbsp;&nbsp;Register</span>
             </button>
