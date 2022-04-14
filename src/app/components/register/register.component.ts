@@ -20,8 +20,8 @@ export class RegisterComponent implements OnInit {
   }
 
   onSubmit() {
-    this.loading = true;
     if (this.registerUser.userName && this.registerUser.password && this.registerUser.password2) {
+      this.loading = true;
       this.auth.register(this.registerUser)
         .subscribe(
           {
